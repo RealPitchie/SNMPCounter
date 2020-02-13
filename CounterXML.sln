@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterXML", "CounterXML\CounterXML.csproj", "{ACADF49E-16A1-4126-BA35-110F4D8FA312}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACADF49E-16A1-4126-BA35-110F4D8FA312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACADF49E-16A1-4126-BA35-110F4D8FA312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACADF49E-16A1-4126-BA35-110F4D8FA312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACADF49E-16A1-4126-BA35-110F4D8FA312}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C64235D-2003-4937-A65A-C89846E9C36A}
+	EndGlobalSection
+EndGlobal
