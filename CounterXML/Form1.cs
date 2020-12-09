@@ -1,9 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
-using SnmpSharpNet;
-using Excel = Microsoft.Office.Interop.Excel;
+using SnmpSharpNet; 
 
 namespace CounterXML
 {
@@ -15,8 +14,7 @@ namespace CounterXML
             InitializeComponent();
         }
 
-        // Объявление переменных
-        Excel.Application xlApp = new Excel.Application();
+        // Объявление переменных 
         OpenFileDialog OPF = new OpenFileDialog();
         OpenFileDialog OPF2 = new OpenFileDialog();
         Encoding enc = Encoding.GetEncoding(1251);
