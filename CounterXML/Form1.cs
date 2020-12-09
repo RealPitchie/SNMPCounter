@@ -25,12 +25,8 @@ namespace CounterXML
         private void button1_Click_1(object sender, EventArgs e)
         {
             {
-
                 //к кому будем обращаться
-                string host = "192.168.0.95";
-
-                //очищаем область ответа
-                //responseTextBox.Text = "";
+                string host = "192.168.0.95"; 
                 string community = "public";
                 //создаем запрос
                 var snmp = new SimpleSnmp(host, community);
@@ -61,8 +57,7 @@ namespace CounterXML
                 int i = 0;
 
                 foreach (var kvp in result)
-                {
-                    int n = 0;
+                { 
                     //если есть ответ, то выводим
                    
                     switch (i)
@@ -84,8 +79,6 @@ namespace CounterXML
                     };
                     dataGridView1.Rows[0].Cells[i].Value = kvp.Value;
                     i++;
-                    n++;
-                   
                 }
             }
         }
@@ -93,18 +86,14 @@ namespace CounterXML
         private void button2_Click(object sender, EventArgs e)
         {
             //к кому будем обращаться
-            string host = "192.168.0.24";
-
-            //очищаем область ответа
-            // responseTextBox.Text = "";
+            string host = "192.168.0.24"; 
             string community = "public";
             //создаем запрос
             var snmp = new SimpleSnmp(host, community);
             //если запрос не валиден, то пишем об этом
             if (!snmp.Valid)
             {
-                MessageBox.Show("Запрос не валиден", "Error");
-                // responseTextBox.Text += Resources.Not_Valid_SNMP_HOST;
+                MessageBox.Show("Запрос не валиден", "Error"); 
                 return;
             }
             //формируем тело запроса и отсылаем его
@@ -130,10 +119,7 @@ namespace CounterXML
             //счетчик для форматирования
             int i = 0;
             foreach (var kvp in result)
-            {
-                int n = 0;
-
-                int m = 0;
+            { 
                 //если есть ответ, то выводим
                 switch (i)
                 {
@@ -166,18 +152,13 @@ namespace CounterXML
                 dataGridView2.Rows[0].Cells[i].Value = kvp.Value;
 
                 i++;
-                n++;
-                m++;
-            }
+             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             //к кому будем обращаться
-            string host = "192.168.0.150";
-
-            //очищаем область ответа
-            //responseTextBox.Text = "";
+            string host = "192.168.0.150"; 
             string community = "public";
             //создаем запрос
             var snmp = new SimpleSnmp(host, community);
@@ -208,11 +189,7 @@ namespace CounterXML
             int i = 0;
 
             foreach (var kvp in result)
-            {
-                int n = 0;
-                //если есть ответ, то выводим
-                int m = 0;
-
+            { 
                 switch (i)
                 {
 
@@ -232,17 +209,10 @@ namespace CounterXML
                 };
                 dataGridView3.Rows[0].Cells[i].Value = kvp.Value;
                 
-
-                i++;
-                n++;
-                m++;
+		i++; 
             }
         }
 
     
     }
 }
-
-
-
-
